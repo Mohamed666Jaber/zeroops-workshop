@@ -1,0 +1,10 @@
+name: Hello ZeroOps
+on: push
+jobs:
+  build_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python --version
+      - run: pwd
+      - run: ls -la
